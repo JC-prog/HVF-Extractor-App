@@ -1,0 +1,12 @@
+[
+  {
+    "section_name": "header_info",
+    "normalized_box": [
+      0.04302325581395349,  
+      0.04625,                  
+      0.9720930232558139,   
+      0.21875                
+    ],
+    "description": "The main header section containing logos and titles."
+  }
+]
