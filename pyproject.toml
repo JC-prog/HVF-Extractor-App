@@ -1,0 +1,25 @@
+[project]
+name = "ophtho_ocr"
+version = "0.1.0"
+description = "OCR extraction for HVF and VRVF ophthalmology reports"
+authors = [
+  { name="Jeffrey Chong" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "opencv-python",
+  "paddleocr",
+  "numpy",
+  "pillow",
+  "openpyxl",
+  "pydantic",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
