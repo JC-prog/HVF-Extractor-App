@@ -19,7 +19,7 @@ def process_extraction(temp_path: str, file_name: str, template: str, output_dir
     """Helper function to call the correct extraction logic based on the template."""
     # Assuming run_extraction handles the template internally, passing the template string along.
     # If not, you would typically have run_hvf_extraction and run_vrvf_extraction separately.
-    return run_extraction(temp_path, output_dir=output_dir, template_name=template)
+    return run_extraction(temp_path, output_dir=output_dir)
 
 def save_to_csv(results_content: str, file_name: str, output_dir: pathlib.Path):
     """Helper function to save extracted data to a CSV file."""
@@ -51,7 +51,7 @@ def single_extraction_view():
     with col_upload:
         uploaded_file = st.file_uploader(
             "Upload one HVF/VRVF Image File",
-            type=["png", "jpg", "jpeg", "dcm"],
+            type=["png", "jpg", "jpeg", "dcm", "pdf"],
             accept_multiple_files=False
         )
     

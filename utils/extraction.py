@@ -21,7 +21,7 @@ def run_extraction(image_path, output_dir=None):
     image_pil = Image.fromarray(image_np_loaded)
 
 
-    result2 = ocr.ocr(cropped_img):
+    result2 = ocr.ocr(cropped_img)
     
 
     return placeholder_content, True
