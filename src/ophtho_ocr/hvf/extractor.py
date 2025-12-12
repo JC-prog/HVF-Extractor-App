@@ -50,3 +50,15 @@ class HVFExtractor:
             results[key] = ",".join(rec_texts) if rec_texts else ""
 
         return results
+
+    def full_extract(self, image_path: str) -> str:
+        ocr_result = self.ocr.predict(image_path)
+
+        # Extract recognized text
+        rec_texts = []
+        for block in ocr_result:
+            rec_texts.extend(block.get("rec_texts", []))
+
+        results = ",".join(rec_texts) if rec_texts else ""
+
+        return results
