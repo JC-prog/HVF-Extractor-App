@@ -47,6 +47,6 @@ class HVFExtractor:
             for block in ocr_result:
                 rec_texts.extend(block.get("rec_texts", []))
 
-            results[key] = " ".join(rec_texts) if rec_texts else ""
+            results[key] = ",".join(rec_texts) if rec_texts else ""
 
         return results

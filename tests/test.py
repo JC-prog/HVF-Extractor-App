@@ -3,7 +3,7 @@ from ophtho_ocr.hvf.extractor import HVFExtractor
 from ophtho_ocr.export.xlsx import XLSXExporter
 
 # Make path relative to THIS script, not the current working directory
-file_name = "HVF_LE.png"
+file_name = "hvf_od.png"
 script_dir = os.path.dirname(os.path.abspath(__file__))
 img_path = os.path.join(script_dir, "../samples", file_name)
 
